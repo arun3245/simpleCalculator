@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input id="output" type="text" class="calculator-screen"  />
+    <div class="calculator-keys">
+      <div>
+        <div>
+            <button class="button" onclick="clear()" style="background-color: rgba(227, 227, 15, 0.689); color: #000;">AC</button>
+            <button class="button" onclick="remove()" style="background-color: rgba(227, 227, 15, 0.689); color: #000;">C</button>
+            <button class="button" onclick="display('%')" style="background-color: rgba(227, 227, 15, 0.689); color: #000;">%</button>
+            <button class="button" onclick="display('/')" style="background-color:orange; color: #000;">/</button>
+        </div>
+        <div>
+            <button class="button"onclick="display('7')" style="background-color:lightgray; color: #000;">7</button>
+            <button class="button"onclick="display('8')" style="background-color:lightgray; color: #000;">8</button>
+            <button class="button"onclick="display('9')" style="background-color:lightgray; color: #000;">9</button>
+            <button class="button"onclick="display('*')" style="background-color:orange; color: #000;">*</button>
+        </div>
+        <div>
+          <button class="button" onclick="display('4')" style="background-color:lightgray; color: #000;">4</button>
+          <button class="button" onclick="display('5')" style="background-color:lightgray; color: #000;">5</button>
+          <button class="button" onclick="display('6')" style="background-color:lightgray; color: #000;">6</button>
+          <button class="button" onclick="display('-')" style="background-color:orange; color: #000;">-</button>
+      </div>
+      <div>
+        <button class="button" onclick="display('1')" style="background-color:lightgray; color: #000;">1</button>
+        <button class="button" onclick="display('2')" style="background-color:lightgray; color: #000;">2</button>
+        <button class="button" onclick="display('3')" style="background-color:lightgray; color: #000;">3</button>
+        <button class="button" onclick="display('+')" style="background-color:orange; color: #000;">+</button>
+    </div>
+    <div>
+      <button class="button1" onclick="display('0')" style="width: 135px; background-color: lightgray;color: #000;" >0</button >
+      <button class="button" onclick="display(',')" style="background-color:lightgray; color: #000;">,</button>
+      <button class="button" onclick="showResult()" style="background-color:orange; color: #000;">=</button>
+      
+  </div>
+      </div>
+      
+
+  <script src="./script.js"></script>
+</body>
+</html>
